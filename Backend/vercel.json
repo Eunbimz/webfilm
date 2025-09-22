@@ -7,6 +7,9 @@
     { "src": "Frontend/js/**/*.js", "use": "@vercel/static" }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "Frontend/html/$1" }
+    { "src": "/css/(.*)", "dest": "/Frontend/css/$1" },
+    { "src": "/js/(.*)", "dest": "/Frontend/js/$1" },
+    { "src": "/image/(.*)", "dest": "/Frontend/image/$1" },
+    { "src": "/(.*)", "dest": "/Frontend/html/$1" }
   ]
 }
