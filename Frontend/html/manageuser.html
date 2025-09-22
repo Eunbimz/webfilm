@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kelola User</title>
+  <link rel="stylesheet" href="../css/manageuser.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../../Backend/config/manageUser.js" type="module" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <h1>Edit User</h1>
+    <nav>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="addFilm.html">
+          <button>+ Tambah Film</button>
+        </a>
+        <a href="home.html">
+          <button>Home</button>
+        </a>
+        <button id="logoutBtn">Keluar</button>
+      </nav>
+  </header>
+
+  <main>
+    <div class="card">
+      <h1>Kelola Profil User</h1>
+
+      <form id="userForm">
+        <label for="nama">Nama</label>
+        <input id="nama" name="nama" type="text" placeholder="contoh: Bima Pratama" />
+
+        <label for="foto">Foto Profil</label>
+        <input id="foto" name="foto" type="url" placeholder="https://example.com/fotokamu.jpg" required />
+
+        <label for="deskripsi">Deskripsi</label>
+        <textarea id="deskripsi" name="deskripsi" rows="4" placeholder="Tulis sedikit tentang dirimu..."></textarea>
+
+        <button id="submit" type="submit">Simpan Perubahan</button>
+        <button onclick="window.location.href='user.html'" style="
+            width: 100%;
+            margin-top: 12px;
+            background: #e0e0e0;
+            color: #333;
+            border: none;
+            padding: 10px 0;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+          ">
+          Kembali ke User
+        </button>
+      </form>
+    </div>
+  </main>
+</body>
+
+</html>

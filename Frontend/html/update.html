@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Film</title>
+    <link rel="stylesheet" href="../css/addfilm.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="../../Backend/config/editFilm.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Update Film</h1>
+        <nav>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="addFilm.html">
+                    <button>+ Tambah Film</button>
+                </a>
+                <a href="user.html">
+                    <button>User</button>
+                </a>
+                <a href="home.html">
+                    <button>Home</button>
+                </a>
+                <button id="logoutBtn">Keluar</button>
+            </nav>
+    </header>
+
+    <main>
+        <section class="card" id="updateFilmHeader">
+            <div class="card">
+                <form id="editFilmForm">
+                    <label for="judul">Judul Film:</label>
+                    <input type="text" id="judul" required />
+
+                    <label for="poster">Link Poster (URL):</label>
+                    <input type="url" id="poster" placeholder="https://..." />
+
+                    <label for="nilai">Nilai (0-10):</label>
+                    <input type="number" id="nilai" min="0" max="10" />
+
+                    <label for="review">Review:</label>
+                    <textarea id="review"></textarea>
+
+                    <label>
+                        <input type="checkbox" id="favourite" /> Tandai sebagai favorit
+                    </label>
+
+                    <button type="submit">Simpan Perubahan</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+</body>
+
+</html>

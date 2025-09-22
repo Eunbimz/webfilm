@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/global.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="../../Backend/config/login.js" defer></script>
+
+  </head>
+
+  <body>
+
+    
+    <div class="card">
+      <h1>Masuk</h1>
+
+      <!-- Form login -->
+      <form>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="text" />
+        <small class="desc">Masukkan email</small>
+
+        <label for="password">Password</label>
+        <input
+          id="password"
+          name="password"
+          type="password"
+          placeholder="••••••••"
+        />
+        <small class="desc">Masukkan Password</small>
+
+        <label
+          for="remember"
+          style="margin-top: 12px; display: flex; align-items: center; gap: 8px"
+        >
+        </label>
+
+        <button id="submit" type="submit">Masuk</button>
+
+        <div class="muted">
+          Belum punya akun? Daftar <a href="signup.html">disini</a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>User Profile</title>
+  <link rel="stylesheet" href="../css/user.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../../Backend/config/user.js" type="module" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <h1>User Profile
+    </h1>
+    <nav>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="addFilm.html">
+          <button>+ Tambah Film</button>
+        </a>
+        <a href="home.html">
+          <button>Home</button>
+        </a>
+        <button id="logoutBtn">Keluar</button>
+      </nav>
+  </header>
+  <main>
+    <section class="card" id="userProfile">
+      <img id="userFoto" src="" alt="Foto Profil" style="
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+          " />
+      <h2 id="userNama"></h2>
+      <p id="userDeskripsi"></p>
+
+      <a href="manageuser.html">
+        <button>Edit user</button>
+      </a>
+    </section>
+
+    <section style="margin-top: 24px">
+      <h2 class="fav-title">Film Favorit</h2>
+      <div id="favouriteFilms" class="grid"></div>
+    </section>
+  </main>
+</body>
+
+</html>

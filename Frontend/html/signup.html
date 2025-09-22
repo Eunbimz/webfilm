@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sign Up</title>
+  <link rel="stylesheet" href="../css/global.css" />  
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="../../Backend/config/register.js" defer></script>
+  </head>
+  <body>
+    <div class="card">
+      <h1>Daftar Akun</h1>
+
+      <!-- Form Sign Up -->
+      <form action="#" method="post">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="text" />
+
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" />
+        <small class="desc">Password minimal 8 karakter.</small>
+
+        <label for="confirm_password">Konfirmasi Password</label>
+        <input id="confirm_password" name="confirm_password" type="password" />
+        <small class="desc">Masukkan ulang password untuk konfirmasi.</small>
+
+        <button id="submit" type="submit">Daftar</button>
+
+        <div class="muted">
+          Sudah punya akun? Masuk <a href="signin.html">disini</a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
