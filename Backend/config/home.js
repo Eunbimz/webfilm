@@ -35,7 +35,7 @@ const logoutBtn = document.getElementById("logoutBtn");
 // Logout
 logoutBtn.addEventListener("click", async () => {
     await signOut(auth);
-    window.location.href = "signin.html";
+    window.location.href = "index.html";
 });
 
 // Fungsi untuk memotong teks

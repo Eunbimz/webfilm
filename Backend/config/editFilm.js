@@ -91,7 +91,7 @@ form.addEventListener("submit", (e) => {
 // Logout
 logoutBtn.addEventListener("click", async () => {
   await signOut(auth);
-  window.location.href = "signin.html";
+  window.location.href = "index.html";
 });
 
 document.addEventListener("DOMContentLoaded", () => {
